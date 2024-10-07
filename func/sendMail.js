@@ -13,7 +13,7 @@ let transporter = nodemailer.createTransport({
 async function sendEmail(toEmail, subject, text) {
   try {
     let info = await transporter.sendMail({
-      from: '"Your Name" <sahilkumbharkar7@gmail.com>', // Sender address should match authenticated email
+      from: '"Sahil Kumbharkar" <sahilkumbharkar7@gmail.com>', // Sender address should match authenticated email
       to: toEmail, // Receiver's email
       subject: subject, // Subject line
       text: text, // Plain text body
